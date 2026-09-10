@@ -1,3 +1,4 @@
+/** Visual Search chips (workout, sauna, soak…). Fuzzy-search TagKey. */
 export type TagKey =
   | "gym"
   | "sauna"

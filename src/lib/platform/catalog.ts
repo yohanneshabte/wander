@@ -1,3 +1,7 @@
+/**
+ * House seed: Watercourse (phone bathhouse) + SoliVana (online control).
+ * Not affiliated — modeled from public pages for the pitch.
+ */
 import type { HouseCatalog, Membership, Resource, Service, Site } from "./types";
 
 function site(partial: Site): Site {

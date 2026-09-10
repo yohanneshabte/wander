@@ -1,5 +1,19 @@
+# deps + local env (never commit secrets)
 node_modules/
+.env
+.env.local
+.env.*.local
+!.env.example
 .project_id
 .github_repo
-.env
-.env.*
+
+# local / preview state
+.data/
+.vercel/
+dist/
+coverage/
+
+# generated dumps not needed in OSS
+artifacts/
+screenshots/
+attachments/

@@ -1,3 +1,7 @@
+/**
+ * Store portal + listing seed. Queries are partitioned by store_id.
+ * Codes: WANDER_STORE_CODES (see .env.example).
+ */
 import { createServerFn } from "@tanstack/react-start";
 import { getSql } from "@/lib/db";
 import { authMiddleware } from "@/lib/auth/middleware";
@@ -5,11 +9,13 @@ import { LISTING_SEED, type ListingCard } from "./listings";
 import { KIND_MENU } from "@/lib/directory/prospects";
 import type { PlaceKind } from "@/lib/directory/prospects";
 
-const STORE_CODES: Record<string, string> = {
-  walnut: "perspire-wc",
-  bms: "bms-sc",
-  piedmont: "piedmont-springs",
-};
+const STORE_CODES: Record<string, string> = Object.fromEntries(
+  (process.env.WANDER_STORE_CODES || "walnut:perspire-wc,bms:bms-sc,piedmont:piedmont-springs")
+    .split(",")
+    .map((pair) => pair.split(":").map((s) => s.trim().toLowerCase()))
+    .filter((p) => p.length === 2 && p[0] && p[1])
+    .map(([code, id]) => [code, id]),
+);
 
 async function seedListings() {
   const sql = await getSql();

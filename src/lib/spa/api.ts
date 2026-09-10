@@ -1,3 +1,7 @@
+/**
+ * Bookings, visit pings, desk codes. Staff/store queries are site-partitioned.
+ * Occupancy rules stay in engine.ts — this file is I/O.
+ */
 import { createServerFn } from "@tanstack/react-start";
 import { getSql } from "@/lib/db";
 import { authMiddleware } from "@/lib/auth/middleware";
@@ -245,8 +249,8 @@ export const claimDesk = createServerFn({ method: "POST" })
   .validator((code: string) => code.trim().toLowerCase())
   .middleware([authMiddleware])
   .handler(async ({ context, data: code }) => {
-    const DESK = "channing";
-    const OWNER = "lotus";
+    const DESK = (process.env.WANDER_DESK_CODE || "channing").toLowerCase();
+    const OWNER = (process.env.WANDER_OWNER_CODE || "lotus").toLowerCase();
     if (code !== DESK && code !== OWNER) {
       throw new Error("That desk code did not match.");
     }

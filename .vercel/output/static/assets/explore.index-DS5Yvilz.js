@@ -1,1 +1,0 @@
-import{r as e}from"./useRouter-B4RdKobV.js";import{t}from"./useNavigate-CfSeN4dD.js";var n=e(),r=()=>(0,n.jsx)(t,{to:`/search`});export{r as component};

@@ -1,3 +1,7 @@
+/**
+ * Occupancy engine — 15-min cleaning buffer, 75% concurrent cap,
+ * weekday-morning fill, slow-hour stretch. Pure functions, no I/O.
+ */
 import { addDays, format, parseISO } from "date-fns";
 import {
   BUFFER_MIN,

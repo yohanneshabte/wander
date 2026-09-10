@@ -1,3 +1,7 @@
+/**
+ * Offline Search — filters LISTING_SEED in the browser (100-mile radius).
+ * No network. Used by /search so the printed QR still works without sign-in.
+ */
 import { LISTING_SEED, type ListingCard } from "./listings";
 import { ANCHORS, miles } from "@/lib/directory/geo";
 import { placeMatchesTag } from "./tags";
