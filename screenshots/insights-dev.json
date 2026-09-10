@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/insights",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 1352,
+      "bodyTextHash": "0813dc83a7d5ea8c3b0556ce1217a4cf8e3c08ccf878c77a4ce1f51c5aef36df",
+      "bodyTextPrefix": "WATERCOURSE WAY Front Desk Walk-in numbers, then a Circle member",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/insights-dev.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 1394,
+      "bodyTextHash": "9ed8ae00d472ff88b4977da20728f2135c36dfcfcdeac92a68ab1292299c264c",
+      "bodyTextPrefix": "WATERCOURSE WAY Front Desk Walk-in numbers, then a Circle member",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/insights-dev-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/insights-dev.json"
+}

@@ -1,0 +1,15 @@
+alter table visits add column if not exists session_id text;
+alter table visits add column if not exists device text;
+alter table visits add column if not exists os text;
+alter table visits add column if not exists browser text;
+alter table visits add column if not exists screen text;
+alter table visits add column if not exists viewport text;
+alter table visits add column if not exists dpr numeric;
+alter table visits add column if not exists lang text;
+alter table visits add column if not exists tz text;
+alter table visits add column if not exists touch integer;
+alter table visits add column if not exists connection text;
+alter table visits add column if not exists referrer text;
+alter table visits add column if not exists ua text;
+create index if not exists visits_session_idx on visits (session_id);
+create index if not exists visits_device_idx on visits (device);

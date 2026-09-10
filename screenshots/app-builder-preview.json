@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 706,
+      "bodyTextHash": "cb0c9fc533754052a9945c273ef405580d3d746847b18f07f6d08e14f6566616",
+      "bodyTextPrefix": "PALO ALTO · SINCE 1980 Watercourse Way Book the room on your pho",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 706,
+      "bodyTextHash": "cb0c9fc533754052a9945c273ef405580d3d746847b18f07f6d08e14f6566616",
+      "bodyTextPrefix": "PALO ALTO · SINCE 1980 Watercourse Way Book the room on your pho",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

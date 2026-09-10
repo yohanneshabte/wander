@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/book",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 455,
+      "bodyTextHash": "68db121e9a81f1d1a40fef90d62e122e0d40a47a7ebeb0647640f524a7a70c80",
+      "bodyTextPrefix": "PRIVATE HOT TUB ROOMS Book Now Advance reservations · 165 Channi",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/book-dev.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Watercourse Way",
+      "hasCanvas": false,
+      "bodyTextLen": 455,
+      "bodyTextHash": "68db121e9a81f1d1a40fef90d62e122e0d40a47a7ebeb0647640f524a7a70c80",
+      "bodyTextPrefix": "PRIVATE HOT TUB ROOMS Book Now Advance reservations · 165 Channi",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/book-dev-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/book-dev.json"
+}
