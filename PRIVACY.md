@@ -37,6 +37,24 @@ placeholders such as `<OWNER_NAME>`, `<EMAIL>`, `<PHONE>`, `<VIN>`,
 - [ ] Demo desk/store codes stay generic (`desk-a`…`desk-e`, `store-1`…`store-3`); set real ones only via env vars
 - [ ] Client business details (name, address, phone) use `<CLIENT_*>` placeholders or env/config
 
+## Tesla-proprietary & employer-confidential
+Only public information belongs here. Cite public sources, such as
+[commaai/opendbc](https://github.com/commaai/opendbc) for vehicle CAN signals, the
+public Tesla Owner's Manual and service.tesla.com Service Manual, and public parts
+catalogs/listings.
+- [ ] No internal Tesla data: no Toolbox/internal tooling details, internal hostnames/URLs, or anything marked confidential/internal/do-not-distribute
+- [ ] No non-public CAN IDs, signals, or protocols (check against opendbc `tesla_*.dbc`), firmware internals (build names, unreleased versions, decrypted images, keys, gateway configs), or undocumented service-mode menus/codes
+- [ ] No internal part numbers beyond public catalogs and service manuals
+- [ ] No self-driving training data, camera clips/frames, camera analytics, fleet telemetry, or data-engine/autolabel/shadow-mode internals
+- [ ] Personal dashcam/TeslaCam/Sentry media stays out of the repo (plates, faces, and GPS metadata are PII)
+- [ ] No ex-employer (e.g. Google) confidential info: no codenames, go/ links, internal hostnames, LDAPs, bug IDs, internal docs or design-doc content, or code copied from internal repos
+- [ ] No other third party's NDA or confidential material
+
+This checklist is a hygiene aid, **not legal advice**. If any such data is ever
+committed by accident, treat it as a **rewrite-immediately** event: purge it with
+`git filter-repo` or BFG Repo-Cleaner, force-push, have collaborators re-clone, and
+rotate any exposed keys. Do not just fix it forward.
+
 ## Git history warning
 Deleting or editing a file does **not** remove it from past commits. Anyone with
 access to the repository (or a fork or clone) can still read the old content.
