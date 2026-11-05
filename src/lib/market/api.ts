@@ -10,7 +10,7 @@ import { KIND_MENU } from "@/lib/directory/prospects";
 import type { PlaceKind } from "@/lib/directory/prospects";
 
 const STORE_CODES: Record<string, string> = Object.fromEntries(
-  (process.env.WANDER_STORE_CODES || "walnut:perspire-wc,bms:bms-sc,piedmont:piedmont-springs")
+  (process.env.WANDER_STORE_CODES || "desk-c:store-1,desk-d:store-2,desk-e:store-3")
     .split(",")
     .map((pair) => pair.split(":").map((s) => s.trim().toLowerCase()))
     .filter((p) => p.length === 2 && p[0] && p[1])

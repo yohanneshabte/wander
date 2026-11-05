@@ -12,7 +12,7 @@
 ## Demo codes
 
 `WANDER_DESK_CODE`, `WANDER_OWNER_CODE`, `WANDER_STORE_CODES` default to the
-lobby demo (`channing` / `lotus` / `walnut`). **Change them** before any real
+lobby demo (`desk-a` / `desk-b` / `desk-c`). **Change them** before any real
 desk uses a deploy. Anyone who reads this repo can type those codes.
 
 ## Tenancy

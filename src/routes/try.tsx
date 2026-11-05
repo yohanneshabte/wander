@@ -38,7 +38,7 @@ function TryPage() {
         </h1>
         <p className="mt-2 text-sm leading-relaxed text-muted">
           No login. They scan, tap Book Now, and try a room. Print two on a
-          letter page at FedEx and leave one at 165 Channing.
+          letter page at FedEx and leave one at <CLIENT_ADDRESS>.
         </p>
       </div>
 

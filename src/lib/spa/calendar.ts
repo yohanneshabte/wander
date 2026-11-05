@@ -39,7 +39,7 @@ export function bookingDetails(booking: Booking) {
     `${booking.guests} ${booking.guests === 1 ? "guest" : "guests"}`,
     booking.withSauna ? "Hot Tub with Sauna or Steam" : "Hot Tub",
     booking.massageRequest ? "Massage requested (confirm by phone)" : null,
-    "Demo reservation — real tubs are booked by calling 650-462-2000",
+    "Demo reservation — real tubs are booked by calling <CLIENT_PHONE>",
   ].filter(Boolean);
   return bits.join("\n");
 }

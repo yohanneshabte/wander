@@ -91,8 +91,8 @@ const watercourse: HouseCatalog = {
     name: "Watercourse Way",
     tagline: "A journey for the spirit, a respite for the body",
     city: "Palo Alto",
-    address: "165 Channing Avenue, Palo Alto, CA 94301",
-    phone: "650-462-2000",
+    address: "<CLIENT_ADDRESS>",
+    phone: "<CLIENT_PHONE>",
     website: "https://watercourseway.com",
     hoursNote: "Sun–Thu 8am–11:30pm · Fri–Sat 8am–12:30am",
     openMin: 8 * 60 + 30,
@@ -102,7 +102,7 @@ const watercourse: HouseCatalog = {
     maxConcurrent: 6,
     theme: "cream",
     bookingNote:
-      "Private Hot Tub Rooms are still booked by calling 650-462-2000. Massage and facials also sit on Booker.",
+      "Private Hot Tub Rooms are still booked by calling <CLIENT_PHONE>. Massage and facials also sit on Booker.",
     pitch: "Book the room on your phone instead of waiting 30 minutes at the desk.",
   }),
   resources: [
@@ -164,7 +164,7 @@ const solivana: HouseCatalog = {
     tagline: "Where Silicon Valley comes to reset",
     city: "Redwood City",
     address: "1922 El Camino Real, Redwood City, CA 94063",
-    phone: "650-564-4325",
+    phone: "<CLIENT_PHONE>",
     website: "https://solivana.com",
     hoursNote: "Daily 11am–8pm",
     openMin: 11 * 60,

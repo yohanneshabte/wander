@@ -249,8 +249,8 @@ export const claimDesk = createServerFn({ method: "POST" })
   .validator((code: string) => code.trim().toLowerCase())
   .middleware([authMiddleware])
   .handler(async ({ context, data: code }) => {
-    const DESK = (process.env.WANDER_DESK_CODE || "channing").toLowerCase();
-    const OWNER = (process.env.WANDER_OWNER_CODE || "lotus").toLowerCase();
+    const DESK = (process.env.WANDER_DESK_CODE || "desk-a").toLowerCase();
+    const OWNER = (process.env.WANDER_OWNER_CODE || "desk-b").toLowerCase();
     if (code !== DESK && code !== OWNER) {
       throw new Error("That desk code did not match.");
     }

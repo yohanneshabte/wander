@@ -42,8 +42,8 @@ cp .env.example .env.local   # optional; empty DATABASE_URL → PGLite
 npm run dev                  # 0.0.0.0:8080
 ```
 
-Demo codes (change before production): desk `channing`, owner `lotus`,
-store `walnut` / `bms` / `piedmont`. See [docs/SECURITY.md](docs/SECURITY.md).
+Demo codes (change before production): desk `desk-a`, owner `desk-b`,
+store `desk-c` / `desk-d` / `desk-e`. See [docs/SECURITY.md](docs/SECURITY.md).
 
 ## Branches
 

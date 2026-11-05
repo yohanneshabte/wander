@@ -97,7 +97,7 @@ export function AdminHouse() {
         />
       </ul>
       <p className="mt-4 text-xs leading-relaxed text-muted">
-        Store portals: a house signs in, then enters walnut / bms / piedmont on
+        Store portals: a house signs in, then enters desk-c / desk-d / desk-e on
         Visits. They only see their own guests. Explore is for signed-in
         members — not the printed QR.
       </p>

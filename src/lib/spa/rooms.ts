@@ -1,7 +1,7 @@
-export const PHONE = "650-462-2000";
-export const PHONE_TEL = "tel:+16504622000";
-export const ADDRESS = "165 Channing Ave, Palo Alto";
-export const ADDRESS_FULL = "165 Channing Avenue, Palo Alto, CA 94301";
+export const PHONE = "<CLIENT_PHONE>";
+export const PHONE_TEL = "tel:<CLIENT_PHONE>";
+export const ADDRESS = "<CLIENT_ADDRESS>";
+export const ADDRESS_FULL = "<CLIENT_ADDRESS>";
 /** Hidden print QR target. Not linked from public nav. */
 export const DEMO_URL = "https://flora-berry-ever-island.grok.me";
 

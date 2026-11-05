@@ -21,7 +21,7 @@ export const Route = createRootRoute({
       {
         name: "description",
         content:
-          "Book a private hot-tub room at Watercourse Way from your phone. 165 Channing Ave, Palo Alto.",
+          "Book a private hot-tub room at Watercourse Way from your phone. <CLIENT_ADDRESS>.",
       },
       { name: "theme-color", content: "#F3EBDD" },
       { name: "apple-mobile-web-app-capable", content: "yes" },
