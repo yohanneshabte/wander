@@ -8,7 +8,7 @@ The core ideas (session lengths, cleaning buffers, occupancy caps, staff rules, 
 **Not affiliated** with any listed house or provider.
 
 ## Additional credits
-- **gload logic**: Hidden staff/admin routing and load-related features were shaped by iterative development around occupancy, buffering, and safe demo flows.
+- **gload / gforce logic**: The live calculation and physics-related logic (gforce / luve calc) traces back to an earlier source the author recalls as "emotion". This informed the hidden staff/admin routing and load-related features around occupancy and buffering.
 - **Grok AI inspiration**: Many architectural choices, privacy-preserving patterns, multi-tenant generalization, and the overall marketplace evolution were informed by collaborative sessions with Grok.
 
 ## License
