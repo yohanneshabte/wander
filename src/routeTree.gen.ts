@@ -20,6 +20,7 @@ import { Route as GuideRouteImport } from './routes/guide'
 import { Route as InsightsRouteImport } from './routes/insights'
 import { Route as LoginRouteImport } from './routes/login'
 import { Route as ManageRouteImport } from './routes/manage'
+import { Route as MeRouteImport } from './routes/me'
 import { Route as SearchRouteImport } from './routes/search'
 import { Route as TryRouteImport } from './routes/try'
 import { Route as DirectoryIdRouteImport } from './routes/directory.$id'
@@ -83,6 +84,11 @@ const ManageRoute = ManageRouteImport.update({
   path: '/manage',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MeRoute = MeRouteImport.update({
+  id: '/me',
+  path: '/me',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SearchRoute = SearchRouteImport.update({
   id: '/search',
   path: '/search',
@@ -131,6 +137,7 @@ export interface FileRoutesByFullPath {
   '/insights': typeof InsightsRoute
   '/login': typeof LoginRoute
   '/manage': typeof ManageRoute
+  '/me': typeof MeRoute
   '/search': typeof SearchRoute
   '/try': typeof TryRoute
   '/directory/$id': typeof DirectoryIdRoute
@@ -150,6 +157,7 @@ export interface FileRoutesByTo {
   '/insights': typeof InsightsRoute
   '/login': typeof LoginRoute
   '/manage': typeof ManageRoute
+  '/me': typeof MeRoute
   '/search': typeof SearchRoute
   '/try': typeof TryRoute
   '/directory/$id': typeof DirectoryIdRoute
@@ -171,6 +179,7 @@ export interface FileRoutesById {
   '/insights': typeof InsightsRoute
   '/login': typeof LoginRoute
   '/manage': typeof ManageRoute
+  '/me': typeof MeRoute
   '/search': typeof SearchRoute
   '/try': typeof TryRoute
   '/directory/$id': typeof DirectoryIdRoute
@@ -193,6 +202,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/login'
     | '/manage'
+    | '/me'
     | '/search'
     | '/try'
     | '/directory/$id'
@@ -212,6 +222,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/login'
     | '/manage'
+    | '/me'
     | '/search'
     | '/try'
     | '/directory/$id'
@@ -232,6 +243,7 @@ export interface FileRouteTypes {
     | '/insights'
     | '/login'
     | '/manage'
+    | '/me'
     | '/search'
     | '/try'
     | '/directory/$id'
@@ -253,6 +265,7 @@ export interface RootRouteChildren {
   InsightsRoute: typeof InsightsRoute
   LoginRoute: typeof LoginRoute
   ManageRoute: typeof ManageRoute
+  MeRoute: typeof MeRoute
   SearchRoute: typeof SearchRoute
   TryRoute: typeof TryRoute
   ServiceSlugRoute: typeof ServiceSlugRoute
@@ -336,6 +349,13 @@ declare module '@tanstack/react-router' {
       path: '/manage'
       fullPath: '/manage'
       preLoaderRoute: typeof ManageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/me': {
+      id: '/me'
+      path: '/me'
+      fullPath: '/me'
+      preLoaderRoute: typeof MeRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/search': {
@@ -427,6 +447,7 @@ const rootRouteChildren: RootRouteChildren = {
   InsightsRoute: InsightsRoute,
   LoginRoute: LoginRoute,
   ManageRoute: ManageRoute,
+  MeRoute: MeRoute,
   SearchRoute: SearchRoute,
   TryRoute: TryRoute,
   ServiceSlugRoute: ServiceSlugRoute,

@@ -146,6 +146,15 @@ function Home() {
             Open the benefits guide
           </Link>
         </li>
+        <li className="rounded-2xl bg-surface px-4 py-3 shadow-[var(--shadow-border)]">
+          <p className="font-medium text-wood">My recovery (personal)</p>
+          <p className="mt-1 text-sm leading-relaxed text-muted">
+            Water-first protocol and personal logs, kept on this device.
+          </p>
+          <Link to="/me" className="mt-2 inline-block text-sm underline decoration-border">
+            Open my dashboard
+          </Link>
+        </li>
       </ul>
 
       <address className="mt-8 mb-4 not-italic px-5 text-sm text-muted">
